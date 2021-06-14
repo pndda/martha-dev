@@ -30,6 +30,38 @@ function martha_scripts() {
    
 
 
+
+// add to specific page 
+function load_scripts() {
+    global $post;
+
+    if( is_page() || is_single() )
+    {
+        switch($post->post_name) // post_name is the post slug which is more consistent for matching to here
+        {
+            case 'home':
+                wp_register_script('martha-rellax', '//https://unpkg.com/swiper/swiper-bundle.css');
+                wp_enqueue_script('martha-rellax');
+                wp_enqueue_script( 'martha-implement-rellax', get_template_directory_uri() . '/assets/js/rellax-custom.js', array(), true, true );
+
+                break;
+            case 'collection':
+                wp_enqueue_style( 'martha-swiper-bundle', '//https://unpkg.com/swiper/swiper-bundle.css'); 
+                wp_enqueue_style( 'martha-swiper-min-bundle', '//https://unpkg.com/swiper/swiper-bundle.min.css');
+                wp_register_script( 'martha-swiper-js', '//https://unpkg.com/swiper/swiper-bundle.js');
+                wp_enqueue_script('martha-swiper-js'); 
+                wp_register_script( 'martha-swiper-min-js', '//https://unpkg.com/swiper/swiper-bundle.min.js');
+                wp_enqueue_script('martha-swiper-min-js'); 
+                break;
+            case 'some-post':
+                wp_enqueue_script('somepost', get_template_directory_uri() . '/js/somepost.js', array('jquery'), '1.6', true);
+                break;
+        }
+    } 
+}
+
+add_action('wp_enqueue_scripts', 'load_scripts');   
+
 // add favicon
 function my_favicon() { ?>
     <link rel="shortcut icon" href="/wp-content/themes/oyu/martha.ico" >
@@ -53,5 +85,5 @@ function add_slug_body_class( $classes ) {
     $classes[] = $post->post_type . '-' . $post->post_name;
     }
     return $classes;
-    }
+    
     add_filter( 'body_class', 'add_slug_body_class' );
