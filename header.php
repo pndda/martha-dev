@@ -25,10 +25,11 @@
         <div class="arrow">
             <a href="<? bloginfo('url')?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/icon/arrow.svg" alt=""></a>
         </div>
-        <header class="header__pages">
-            <div class="container">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/footer-mobile.svg" alt="" class="fh fix-h img-mobile">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/desktop-head.svg" alt="" class="desktop-footer fh fix-h img-desktop">
-            </div>
-        </header>
+    
+            <header class="header__pages">  
+                <div class="container">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/footer-mobile.svg" alt="" class="fh fix-h img-mobile">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/desktop-head.svg" alt="" class="desktop-footer fh fix-h img-desktop">
+                </div>
+            </header>
         <? endif; ?>

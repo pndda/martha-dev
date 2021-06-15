@@ -4,19 +4,13 @@
     <div class="mainPage-footer container">
         <h4>marc martha</h4>
         <p>By Marc Pengel</p>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Drop me a line</a>
-                </li>
-                <li>
-                    <a href="">Follow me on instagram</a>
-                </li>
-                <li>
-                    <a href="">PR Requiest </a>
-                </li>
-            </ul>
-        </nav>
+        <? wp_nav_menu(
+                   array(
+                       'theme_location' => 'footer-menu', 
+                       'menu_id'        => 'footer-nav', 
+                       'menu_class'     => 'footer-nav'
+                   )
+                   );  ?>
     </div>
 
     <div class="mainPage-img">
@@ -28,12 +22,12 @@
 
 </footer>
 <? else: ?>
-<footer class="footer__pages">
-    <div class="container">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/head-mobile.svg" alt="" class="fh fix-f img-mobile">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/desktop-footer.svg" alt="" class="fh fix-f img-desktop">
-    </div>
-</footer>
+    <footer class="footer__pages">
+        <div class="container">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/head-mobile.svg" alt="" class="fh fix-f img-mobile">
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/desktop-footer.svg" alt="" class="fh fix-f img-desktop">
+        </div>
+    </footer>
 <? endif; ?>
 
 <?php wp_footer(); ?>

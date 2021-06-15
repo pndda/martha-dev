@@ -4,9 +4,11 @@
   }
 ?> 
 <div class="content">
-  <div class="container">
+
     <? the_content(); ?>
-  </div>
+
 </div>
 
 <? get_footer(); ?> 
+
+

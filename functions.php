@@ -16,7 +16,7 @@ add_theme_support( 'starter-content');
 function martha_scripts() {
 
     wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'); 
-    wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/assets/css/custom.css');  
+    wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/assets/css/custom.css');  
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     
     wp_register_script( 'Bootstrap-bundle', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js');
@@ -51,10 +51,14 @@ function load_scripts() {
             case 'collection':
                 wp_enqueue_style( 'martha-swiper-bundle', 'https://unpkg.com/swiper/swiper-bundle.css'); 
                 wp_enqueue_style( 'martha-swiper-min-bundle', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-                wp_register_script( 'martha-swiper-js', 'https://unpkg.com/swiper/swiper-bundle.js');
-                wp_enqueue_script('martha-swiper-js'); 
-                wp_register_script( 'martha-swiper-min-js', 'https://unpkg.com/swiper/swiper-bundle.min.js');
-                wp_enqueue_script('martha-swiper-min-js'); 
+                // wp_register_script( 'martha-swiper', 'https://unpkg.com/swiper/swiper-bundle.js');
+                // wp_enqueue_script('martha-swiper'); 
+                // wp_register_script( 'martha-swiper-min', 'https://unpkg.com/swiper/swiper-bundle.min.js');
+                // wp_enqueue_script('martha-swiper-min'); 
+                wp_register_script( 'swiper-min', get_template_directory_uri() . '/assets/js/swiper-min.js', array(), true, true );
+                wp_enqueue_script( 'swiper-min' );
+                wp_register_script('function-swiper', get_template_directory_uri() . '/assets/js/swiper.js', array(), true, true);
+                wp_enqueue_script('function-swiper');
                 break;
             case 'some-post':
                 wp_enqueue_script('somepost', get_template_directory_uri() . '/js/somepost.js', array('jquery'), '1.6', true);
