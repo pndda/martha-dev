@@ -13,10 +13,14 @@
     ↑
 </div>
 
+
+<?  $img1 = get_field('image_1');
+    $img2 = get_field('image_2');
+?>
 <section class="image-overlap rellax" data-rellax-speed="2">
     <div class="container">
         <div class="image-overlap__container">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_10-min.png" alt=""
+            <img src="<?php echo $img1 ?>" alt=""
                 class="frst-v first-v-left ">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_02-min.png" alt=""
                 class="frst-v first-v-right frst-v-max">
@@ -40,34 +44,39 @@
 </section>
 <header id="mainNav">
     <div class="container">
-        <ul class="main-nav">
-            <li>
-                <a href="collection.html">collection</a>
-            </li>
-            <li>
-                <a href="about.html">marc martha</a>
-            </li>
-        </ul>
+    <? wp_nav_menu(
+                   array(
+                       'theme_location' => 'main-menu', 
+                       'menu_id'        => 'main-nav', 
+                       'menu_class'     => 'main-nav'
+                   )
+                   );  ?>
     </div>
 </header>
+
+<?  $img3 = get_field('image_3');
+    $img4 = get_field('image_4');
+    $img5 = get_field('image_5');
+    $img6 = get_field('image_6');
+?>
 <section class="image-overlap-big">
-    <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_35.png" alt="" class="img-big img-mobile">
+    <img src="<?php echo $img3 ?>" alt="" class="img-big img-mobile">
 
     <div class="container scnd-overlap">
         <div class="scnd-overlap-big">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_35.png" alt=""
+            <img src="<?php echo $img3 ?> " alt=""
                 class="img-big img-desktop">
         </div>
         <div class="scnd-overlap__img-left">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_08-min.png" alt=""
+            <img src="<?php echo $img4 ?>" alt=""
                 class="scnd-v scnd-v-left">
         </div>
         <div class="scnd-overlap__img">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_21-min.png" alt=""
+            <img src="<?php echo $img5 ?>" alt=""
                 class="scnd-v scnd-v-right">
         </div>
         <div class="scnd-overlap__max">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_18-min.png" alt=""
+            <img src="<?php echo $img6 ?>" alt=""
                 class="img-big img-desktop">
         </div>
     </div>
@@ -77,15 +86,23 @@
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_18-min.png" alt="" class="img-big img-mobile">
+    <img src="<?php echo $img6 ?>" alt="" class="img-big img-mobile">
 
+    <?  
+    $img7 = get_field('image_7');
+    $img8 = get_field('image_8');
+    $img9 = get_field('image_9');
+    $img10 = get_field('image_10');
+    $img11 = get_field('image_11');
+ 
+?>
     <div class="container ">
         <div class="add-pink">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_32-min.png" alt=""
+            <img src="<?php echo $img7 ?>" alt=""
                 class="img-small thrd-v-right">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_34-min.png" alt=""
+            <img src="<?php echo $img8 ?>" alt=""
                 class="img-small thrd-v-left">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_15-min.png" alt=""
+            <img src="<?php echo $img10 ?>" alt=""
                 class="img-big thrd-max img-desktop">
         </div>
         <div class="quote quote-fresh">
@@ -94,9 +111,10 @@
         </div>
     </div>
     <div class="container v-max">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_25-min.png" alt=""
+        <img src="<?php echo $img9 ?>" alt=""
             class="img-big v-position">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_15-min.png" alt="" class="img-small v-big">
+        <img src="<?php echo $img10 ?>" alt="" class="img-small v-big img-mobile">
+        <img src="<?php echo $img11 ?>" alt="" class="img-small v-big img-desktop">
     </div>
     <div class="container">
         <div class="quote quote-future">
@@ -105,7 +123,7 @@
         </div>
     </div>
     <div class="center-img">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/MARTHA_Oona_27-min.png" alt=""
+        <img src="<?php echo $img11 ?>" alt=""
             class="img-small img-mobile">
     </div>
 

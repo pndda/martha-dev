@@ -23,7 +23,7 @@
 
         <? else : ?>
         <div class="arrow">
-            <a href="index.html"><img src="/assets/img/icon/arrow.svg" alt=""></a>
+            <a href="<? bloginfo('url')?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/icon/arrow.svg" alt=""></a>
         </div>
         <header class="header__pages">
             <div class="container">

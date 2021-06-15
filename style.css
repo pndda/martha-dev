@@ -1,3 +1,4 @@
+
 /*
 Theme name: martha theme 
 Description: Custom Martha theme Developed by studio panadda & Designed by Charly and Lisa
@@ -5,11 +6,6 @@ Author: Panadda Manarata
 Version: 1.0
 */
 
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 
 html,
@@ -233,14 +229,15 @@ h2 {
 
 @font-face {
   font-family: 'outward-block';
-  src: url("../../assets/fonts/outward-block-webfont.woff") format("woff"), url("../../assets/fonts/outward-block-webfont.woff2") format("woff2"), url("../../assets/fonts/outward-block-webfont.ttf") format("ttf"), url("../../assets/fonts/outward-block-webfont.svg") format("svg");
+  src: url("http://martha.local/wp-content/themes/martha/assets/fonts/outward-block-webfont.woff") format("woff"), url("http://martha.local/wp-content/themes/martha/assets/fonts/outward-block-webfont.woff2") format("woff2"), url("http://martha.local/wp-content/themes/martha/assets/outward-block-webfont.ttf") format("ttf"), url("/assets/fonts/outward-block-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
+  
 }
 
 @font-face {
   font-family: 'skanaus';
-  src: url("../../assets/fonts/Skanaus-Regular.woff") format("woff"), url("../../assets/fonts/Skanaus-Regular.woff2") format("woff2");
+  src: url("http://martha.local/wp-content/themes/martha/assets/fonts/Skanaus-Regular.woff") format("woff"), url("http://martha.local/wp-content/themes/martha/assets/fonts/Skanaus-Regular.woff") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -841,38 +838,38 @@ h2 {
   }
 }
 
-.page-content {
+.content {
   position: relative;
 }
 
-.page-content {
+.content {
   text-align: center;
 }
 
-.page-content .name {
+.content .name {
   margin: 50px 0;
 }
 
-.page-content .name h1 {
+.content .name h1 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.page-content .name P {
+.content .name P {
   font-size: 20px;
   line-height: 30px;
 }
 
-.page-content .content p {
+.content .about-text p {
   font-size: 16px;
   line-height: 20px;
 }
 
-.page-content .ft__about {
+.content .ft__about {
   margin: 30px 0;
 }
 
-.page-content .ft__about nav ul li a {
+.content .ft__about nav ul li a {
   font-size: 20px;
   line-height: 30px;
   text-transform: capitalize;
@@ -881,29 +878,29 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  .page-content {
+  .content {
     text-align: center;
   }
-  .page-content .name {
+  .content .name {
     margin: 50px 0;
   }
-  .page-content .name h1 {
+  .content .name h1 {
     font-size: 100px;
     line-height: 80px;
     margin-bottom: 30px;
   }
-  .page-content .name P {
+  .content .name P {
     font-size: 20px;
     line-height: 30px;
   }
-  .page-content .content p {
+  .content .about-text p {
     font-size: 20px;
     line-height: 30px;
   }
-  .page-content .ft__about {
+  .content .ft__about {
     margin: 30px 0;
   }
-  .page-content .ft__about nav {
+  .content .ft__about nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -911,7 +908,7 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .page-content .ft__about nav ul {
+  .content .ft__about nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -925,10 +922,10 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .page-content .ft__about nav ul li {
+  .content .ft__about nav ul li {
     margin-right: 30px;
   }
-  .page-content .ft__about nav ul li a {
+  .content .ft__about nav ul li a {
     font-size: 20px;
     line-height: 30px;
     text-transform: capitalize;
@@ -938,23 +935,23 @@ h2 {
 }
 
 @media (min-width: 992px) {
-  .page-content .name h1 {
+  .content .name h1 {
     font-size: 170px;
     line-height: 160px;
     margin-bottom: 60px;
   }
-  .page-content .name P {
+  .content .name P {
     font-size: 20px;
     line-height: 26px;
   }
-  .page-content .content p {
+  .content .about-text p {
     font-size: 20px;
     line-height: 26px;
   }
-  .page-content .ft__about {
+  .content .ft__about {
     margin: 50px 0;
   }
-  .page-content .ft__about nav ul li a {
+  .content .ft__about nav ul li a {
     font-size: 20px;
     line-height: 26px;
     text-transform: capitalize;

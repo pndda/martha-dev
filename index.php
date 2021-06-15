@@ -3,7 +3,10 @@
         the_post();
   }
 ?> 
-
-<? the_content(); ?>
+<div class="content">
+  <div class="container">
+    <? the_content(); ?>
+  </div>
+</div>
 
 <? get_footer(); ?> 

@@ -8,10 +8,10 @@
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
- 
+                    <? the_content(); ?>
                   </div>
                   <div class="swiper-slide">
-                      <img src="/assets/img/MARTHA-photo-14.jpg" alt="">
+                      <img src="" alt="">
                   </div>
                   <div class="swiper-slide">Slide 3</div>
                   <div class="swiper-slide">Slide 4</div>
