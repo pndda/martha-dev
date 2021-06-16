@@ -84,7 +84,7 @@ add_action( 'init', 'register_menu' );
 
 // add favicon
 function my_favicon() { ?>
-    <link rel="shortcut icon" href="/wp-content/themes/oyu/martha.ico" >
+    <link rel="shortcut icon" href="/wp-content/themes/martha/martha.ico" >
     <?php }
     add_action('wp_head', 'my_favicon');
     

@@ -231,17 +231,19 @@ h2 {
 
 @font-face {
   font-family: 'outward-block';
-  src: url("../../assets/fonts/outward-block-webfont.woff") format("woff"), url("../../assets/fonts/outward-block-webfont.woff2") format("woff2"), url("../../assets/fonts/outward-block-webfont.ttf") format("ttf"), url("../../assets/fonts/outward-block-webfont.svg") format("svg");
+  src: url("https://marcmartha.com/wp-content/themes/martha/assets/fonts/outward-block-webfont.woff") format("woff"), url("https://marcmartha.com/wp-content/themes/martha/assets/fonts/outward-block-webfont.woff2") format("woff2"), url("https://marcmartha.com/wp-content/themes/martha/assets/outward-block-webfont.ttf") format("ttf"), url("https://marcmartha.com/wp-content/themes/martha/assets/fonts/outward-block-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
+  
 }
 
 @font-face {
   font-family: 'skanaus';
-  src: url("../../assets/fonts/Skanaus-Regular.woff") format("woff"), url("../../assets/fonts/Skanaus-Regular.woff2") format("woff2");
+  src: url("https://marcmartha.com/wp-content/themes/martha/assets/fonts/Skanaus-Regular.woff") format("woff"), url("https://marcmartha.com/wp-content/themes/martha/assets/fonts/Skanaus-Regular.woff") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 
 .hide-on-mobile {
   display: none;
@@ -288,7 +290,7 @@ h2 {
   }
 }
 
-.content_fixed {
+/* .content_fixed {
   position: fixed;
   top: 0;
   width: 100%;
@@ -300,7 +302,7 @@ h2 {
   width: 100%;
   -webkit-transition: ease-in 3s;
   transition: ease-in 3s;
-}
+} */
 
 #mainNav {
   z-index: 100;
@@ -328,11 +330,15 @@ h2 {
 
 .main-nav li a {
   text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  transition: all .2s;
+  color: black;
 }
 
 .main-nav li a:hover {
+  border-bottom: 1px solid rgba(0,0,0,1);
+  transition: all .2s;
   color: black;
-  border-bottom: 1px solid black;
 }
 
 @media (min-width: 768px) {
@@ -744,11 +750,14 @@ h2 {
 
 .mainPage-footer .menu-footer-container ul li a {
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0,1);
+  transition: all .3s;
+  color: black;
 }
 
 .mainPage-footer .menu-footer-container ul li a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  transition: all .2s;
   color: black;
 }
 
@@ -861,7 +870,15 @@ h2 {
   line-height: 30px;
   text-transform: capitalize;
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0,0,0,1);
+  transition: all .2s;
+  color: black;
+}
+.content .ft__about ul li a:hover {
+  transition: all .2s;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  color: black;
+  
 }
 
 @media (min-width: 768px) {
@@ -929,9 +946,16 @@ h2 {
     line-height: 30px;
     text-transform: capitalize;
     text-decoration: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    transition: all .2s;
+  }
+  .content .ft__about .menu-footer-container ul li a:hover {
+    border-bottom: 1px solid rgba(0,0,0,0);
+    transition: all .2s;
+    color: black;
   }
 }
+
 
 @media (min-width: 992px) {
   .content .name h1 {
@@ -958,7 +982,13 @@ h2 {
     line-height: 26px;
     text-transform: capitalize;
     text-decoration: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    transition: all .2s;
+  }
+
+  .content .ft__about .menu-footer-container ul li a:hover {
+    transition: all .2s;
+    border-bottom: 1px solid rgba(0,0,0,0);
   }
 }
 

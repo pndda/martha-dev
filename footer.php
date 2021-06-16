@@ -31,6 +31,9 @@
 <? endif; ?>
 
 <?php wp_footer(); ?>
+<script>
+    console.log('- Made By Panadda Manarata')
+</script>
 </body>
 
 </html>
