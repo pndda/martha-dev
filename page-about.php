@@ -5,10 +5,10 @@
 ?>
 
 <div class="content">
-  <div class="container">
+  <div class="container center-abt">
       <div class="name">
           <h1>Marc Martha</h1>
-          <p>Marc Pengel</p>
+          <p>By Marc Pengel</p>
       </div>
 
       <div class="about-text">

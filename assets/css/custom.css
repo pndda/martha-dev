@@ -45,6 +45,12 @@
     width: 72vw;
 }
 
+.center-abt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 @media (min-width: 768px) {
     #carousel {
         height: 90vh;

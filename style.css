@@ -839,6 +839,7 @@ h2 {
 .content .name h1 {
   font-size: 30px;
   line-height: 30px;
+  margin-bottom: 5px;
 }
 
 .content .name P {
