@@ -16,18 +16,15 @@
         <div class="container hero-position">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/martha-logo-mobile-1.svg" alt=""
                 class="mobile-header">
-           
-
         </div>
     </section>
 
     <? else : ?>
+    <header class="header__pages">
     <div class="arrow">
         <a href="<? bloginfo('url')?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/icon/arrow.svg"
                 alt=""></a>
     </div>
-
-    <header class="header__pages">
         <div class="container">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/icon/footer-mobile.svg" alt=""
                 class="fh fix-h img-mobile">

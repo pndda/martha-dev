@@ -1,7 +1,9 @@
 #carousel {
-    height: 80vh;
-    margin: 30px 0;
+    height: 78vh;
+    /* margin: 30px 0; */
 }
+
+
 
 .swiper-container {
     width: 100%;
@@ -11,8 +13,9 @@
 
 .swiper-slide {
     width: auto !important;
-    height: 80vh !important;
+    height: 77vh !important;
 }
+
 
 .collection-text {
     width: 100% !important;
@@ -32,9 +35,24 @@
 }
 
 .collection-text p {
-    font-size: 1rem;
+    font-size: .95rem;
     line-height: 1.2rem;
     margin-bottom: 13px;
+}
+@media (max-width: 320px) {
+    .collection-text h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+    
+    .collection-text p {
+        font-size: .8rem;
+        line-height: 1rem;
+        margin-bottom: 13px;
+    }
+    
 }
 
 .collection-video {
@@ -69,7 +87,7 @@
 } */
 
 .hero-position {
-    height: 94vh;
+    height: 98vh !important;
     overflow: hidden;
 }
 
@@ -98,13 +116,13 @@
 .content .name h1{
     text-transform: uppercase;
 }
+
+
 @media (min-width: 768px) {
-    #carousel {
-        height: 90vh;
-    }
+
 
     .swiper-slide {
-        height: 90vh !important;
+        height: 77vh !important;
     }
 
     .video-martha {
@@ -132,9 +150,6 @@
 }
 
 @media (min-width: 992px) {
-    #carousel {
-        height: 90vh;
-    }
 
     .collection-text {
         width: 60% !important;
