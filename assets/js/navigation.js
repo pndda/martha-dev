@@ -1,7 +1,7 @@
 var viewportHeight = $(window).height();
 // console.log(viewportHeight);
 var navPos = viewportHeight * 1.2;
-var logo = viewportHeight * 1.3;
+var logo = viewportHeight * 1.1;
 // console.log(logo);
 
 

@@ -575,6 +575,11 @@ h2 {
   margin-left: 35px;
 }
 
+.v-max{
+  width: 100%;
+  padding: 0;
+  max-width: unset;
+}
 @media (min-width: 768px) {
   .thrd-max {
     float: right;
