@@ -5,7 +5,7 @@
 ?>
 
 <div class="content">
-    <div class="container">
+    <div class="container-fluid">
         <? $slider = acf_photo_gallery('gallery', $post->ID); 
         // var_dump($slider);
 

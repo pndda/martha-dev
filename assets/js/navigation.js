@@ -1,6 +1,6 @@
 var viewportHeight = $(window).height();
 // console.log(viewportHeight);
-// var smallLogo = viewportHeight * 1.9
+var navPos = viewportHeight * 1.2
 var logo = viewportHeight * 1.4; 
 
 console.log(logo); 
@@ -8,7 +8,7 @@ console.log(logo);
 
 $(window).scroll(function () {
    
-      if ($(this).scrollTop() > viewportHeight) {
+      if ($(this).scrollTop() > navPos) {
         $('#mainNav').addClass("content_fixed");
         $('#mainNav').removeClass("content_remove");
          
