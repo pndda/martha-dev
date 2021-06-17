@@ -29,16 +29,44 @@
                     <? the_content() ?>
                 </div>
 
-                <?php foreach( $slider as $image ): ?>
+                
+                
+                
+                
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-1.gif" alt="collection martha gif" class="swiper-slide">
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-2.gif" alt="collection martha gif" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/mood/naamloos--38-min.jpg" alt="collection martha mood" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-3.gif" alt="collection martha gif" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/mood/naamloos--10-min.jpg" alt="collection martha mood" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-5.gif" alt="collection martha gif" class="swiper-slide">
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-4.gif" alt="collection martha gif" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/mood/naamloos--18-min.jpg" alt="collection martha mood" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-6.gif" alt="collection martha gif" class="swiper-slide">
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-7.gif" alt="collection martha gif" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/mood/naamloos--11-min.jpg" alt="collection martha mood" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-9.gif" alt="collection martha gif" class="swiper-slide">
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/gif/martha-look-8.gif" alt="collection martha gif" class="swiper-slide">
+                
+                <img src="<? echo bloginfo('template_url'); ?>/assets/img/mood/naamloos--23-min.jpg" alt="collection martha mood" class="swiper-slide">
+                
+                
 
-                <img src="<?php echo esc_url($image['full_image_url']); ?>" alt="" class="swiper-slide">
+                <!-- <?php foreach( $slider as $image ): ?>
+                <div class="swiper-slide">
+                    <img src="<?php echo esc_url($image['full_image_url']); ?>" alt="" class="swiper-slide">
+                </div>
 
 
-
-
-
-
-                <?php endforeach; ?>
+                <?php endforeach; ?> -->
 
             </div>
 
