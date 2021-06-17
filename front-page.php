@@ -17,7 +17,7 @@
 <?  $img1 = get_field('image_1');
     $img2 = get_field('image_2');
 ?>
-<section class="image-overlap rellax" data-rellax-speed=".5">
+<section class="image-overlap">
     <div class="container">
         <div class="image-overlap__container">
             <img src="<?php echo $img1 ?>" alt="" class="frst-v first-v-left ">
@@ -29,7 +29,7 @@
 
 <section class="sticky-quote">
     <div class="container">
-        <div class="quote quote-imagine " data-rellax-speed=".5">
+        <div class="quote quote-imagine animate__animated animate__slideInUp">
             <h2 class="img-mobile">imagine <br>the <br class="future">future</h2>
             <h2 class="img-desktop ">imagine <br> the future</h2>
             <ul>
@@ -59,9 +59,9 @@
     $img6 = get_field('image_6');
 ?>
 <section class="image-overlap-big">
-    <img src="<?php echo $img3 ?>" alt="" class="img-big img-mobile rellax" data-rellax-speed="0">
+    <img src="<?php echo $img3 ?>" alt="" class="img-big img-mobile">
 
-    <div class="container scnd-overlap rellax" data-rellax-speed="0">
+    <div class="container scnd-overlap">
         <div class="scnd-overlap-big">
             <img src="<?php echo $img3 ?> " alt="" class="img-big img-desktop">
         </div>
@@ -76,12 +76,12 @@
         </div>
     </div>
     <div class="container">
-        <div class="quote quote-brave rellax" data-rellax-speed=".5">
+        <div class="quote quote-brave animate__animated animate__slideInUp">
             <h2>A brave <br> new <br> world</h2>
         </div>
     </div>
 
-    <img src="<?php echo $img6 ?>" alt="" class="img-big img-mobile rellax" data-rellax-speed="0">
+    <img src="<?php echo $img6 ?>" alt="" class="img-big img-mobile">
 
     <?  
     $img7 = get_field('image_7');
@@ -92,32 +92,39 @@
  
 ?>
     <div class="container">
-        <div class="add-pink rellax" data-rellax-speed="0">
+        <div class="add-pink">
             <img src="<?php echo $img7 ?>" alt="" class="img-small thrd-v-right">
             <img src="<?php echo $img8 ?>" alt="" class="img-small thrd-v-left">
             <img src="<?php echo $img10 ?>" alt="" class="img-big thrd-max img-desktop">
         </div>
-        <div class="quote quote-fresh rellax" data-rellax-speed="0.5">
+        <div class="quote quote-fresh animate__animated animate__slideInUp">
             <h2 class="img-mobile">a fresh <br> start</h2>
             <h2 class="img-desktop">a fresh beginning</h2>
         </div>
     </div>
-    <div class="container v-max rellax" data-rellax-speed="0">
+    <div class="container v-max">
         <img src="<?php echo $img9 ?>" alt="" class="img-big v-position">
         <img src="<?php echo $img10 ?>" alt="" class="img-small v-big img-mobile">
         <img src="<?php echo $img11 ?>" alt="" class="img-small v-big img-desktop">
     </div>
-    <div class="container rellax" data-rellax-speed="0">
-        <div class="quote quote-future">
+    <div class="container">
+        <div class="quote quote-future animate__animated animate__slideInUp">
             <h2 class="img-mobile">the <br> future <br> is black</h2>
             <h2 class="img-desktop">the future <br> is black</h2>
         </div>
     </div>
-    <div class="center-img rellax" data-rellax-speed="0">
+    <div class="center-img">
         <img src="<?php echo $img11 ?>" alt="" class="img-small img-mobile">
     </div>
 
 
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>	
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
+    
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+</script>
 
 <? get_footer(); ?>

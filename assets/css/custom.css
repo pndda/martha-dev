@@ -75,6 +75,7 @@
     position: sticky;
     top: 0;
     transition: all .5s;
+    z-index: -1;
 }
 .scroll-hero{
     transform: translate3d(0, -100%, 0);

@@ -42,10 +42,12 @@ function load_scripts() {
         switch($post->post_name) // post_name is the post slug which is more consistent for matching to here
         {
             case 'home':
-                wp_register_script('rellax', 'https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js');
-                wp_enqueue_script('rellax');
-                wp_register_script( 'martha-implement-rellax', get_template_directory_uri() . '/assets/js/rellax-custom.js', array(), true, true );
-                wp_enqueue_script('martha-implement-rellax');
+                wp_enqueue_style('animate', '//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+                // wp_register_script('rellax', 'https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js');
+                // wp_enqueue_script('rellax');
+                // wp_register_script( 'martha-implement-rellax', get_template_directory_uri() . '/assets/js/rellax-custom.js', array(), true, true );
+                // wp_enqueue_script('martha-implement-rellax');
+                wp_enqueue_script('animation', get_template_directory_uri() . '/assets/js/animate.js', array(), true, true); 
 
                 break;
             case 'collection':
